@@ -8,9 +8,14 @@ Este desafio foi desenvolvido com Ionic Framework por Jocimar Lopes.
 Deploy feito usando a ferramenta Firebase do Google
 #### [Clique aqui](https://desafio-frontend-jocimar.web.app/)
 
-## Instalação
+## Pré-requisitos
 
 Requer o  [Node.js](https://nodejs.org/) para rodar.
+
+Requer [Este repositório](https://github.com/gustavo-startaideia/rest-fake-api) para rodar a API no Localhost:3000
+
+
+## Instalação
 
 Após baixar esse repositório, você precisa instalar as dependências.
 
