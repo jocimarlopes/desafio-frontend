@@ -12,7 +12,7 @@ Deploy feito usando a ferramenta Firebase do Google
 
 Requer o  [Node.js](https://nodejs.org/) para rodar.
 
-Requer [Este repositório](https://github.com/gustavo-startaideia/rest-fake-api) para rodar a API no Localhost:3000
+Requer [Rest-fake-API](https://github.com/gustavo-startaideia/rest-fake-api) para rodar a API no Localhost:3000
 
 
 ## Instalação
