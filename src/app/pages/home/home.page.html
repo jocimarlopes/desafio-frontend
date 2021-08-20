@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col size="{{laterais}}"></ion-col>
+    <ion-col size="{{centro}}">
+      <br>
+      <h1 class="header-text">VUTTR</h1>
+      <h3>Very Useful Tools to Remember</h3>
+      <ion-row>
+        <ion-col size="{{search}}">
+          <ion-searchbar (ionInput)="filtroSearch($event)"></ion-searchbar>
+        </ion-col>
+        <ion-col size="{{tagsOnly}}">
+          <ion-item>
+            <ion-toggle [(ngModel)]="tags"></ion-toggle>
+            <ion-label>Search in Tags only</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="{{button}}" class="ion-text-right">
+          <ion-button (click)="addItem()" fill="outline" color="success">
+            <ion-icon slot="start" name="add-outline"></ion-icon>
+            Add
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size="{{laterais}}"></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="{{laterais}}"></ion-col>
+    <ion-col size="{{centro}}">
+      <ion-card *ngFor="let t of tools">
+        <ion-button (click)="removeItem(t)" class="float-right" color="danger" fill="clear">
+          <ion-icon name="trash-outline"></ion-icon>
+          Remove
+        </ion-button>
+        <ion-card-header class="sized">
+          <ion-card-title>
+            <a href="{{t.link}}">{{t.title}}</a>
+          </ion-card-title>
+          <ion-card-subtitle>{{t.description}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <h5>
+            <b *ngFor="let tag of t.tags">#{{tag}} </b>
+          </h5>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="{{laterais}}"></ion-col>
+  </ion-row>
+</ion-content>
