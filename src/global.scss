@@ -62,4 +62,15 @@ h1 {
 .alert-wrapper{
     min-width: 40% !important;
     max-width: none !important;
-  }
+}
+
+.loader {
+    --background: transparent !important;
+    --spinner-color: #fff;
+    color: #fff;
+    font-size: 20px;
+}
+.loading-wrapper {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}

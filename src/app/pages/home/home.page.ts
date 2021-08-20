@@ -27,11 +27,16 @@ export class HomePage {
     public post: PostService,
     public alert: AlertController
   ) {
-    this.getTools();            
-    this.responsive();
+
+    this.getTools(); // Chamando as Tools da API
+    this.responsive(); // Detectando responsividade
 
   }
 
+  /**
+   * Aqui temos um Método que analisa o Width da tela atual do dispositivo
+   * Detectando a responsividade necessária
+   */
   responsive() {
     if(window.innerWidth < 780) {
       this.laterais = 1;
