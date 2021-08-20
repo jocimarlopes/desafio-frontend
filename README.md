@@ -3,17 +3,17 @@
 
 Este desafio foi desenvolvido com Ionic Framework por Jocimar Lopes.
 
-## Deploy
-
-Deploy feito usando a ferramenta Firebase do Google
-#### [Clique aqui](https://desafio-frontend-jocimar.web.app/)
-
 ## Pré-requisitos
 
 Requer o  [Node.js](https://nodejs.org/) para rodar.
 
 Requer [Rest-fake-API](https://github.com/gustavo-startaideia/rest-fake-api) para rodar a API no Localhost:3000
 
+
+## Deploy
+
+Deploy feito usando a ferramenta Firebase do Google
+#### [Clique aqui](https://desafio-frontend-jocimar.web.app/)
 
 ## Instalação
 
